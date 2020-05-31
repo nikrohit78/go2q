@@ -8,6 +8,7 @@ import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,9 +20,8 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name="services")
-public class Srv extends BaseEntity {
+public class Srv extends SPBaseEntity {
 
-	private Integer serviceprovider_id;
 	private String name;
 	private String displayName;
 	private String startingletter;//CD
